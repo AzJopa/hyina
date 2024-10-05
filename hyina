@@ -1,0 +1,22 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	Scanner in = new Scanner (System.in);
+    System.out.print("Please, enter your first number (x): ");
+    int num= in.nextInt();
+    System.out.print("Please, enter your second number (y): ");
+    int num1= in.nextInt();
+    if(num*num1>=100)
+    {
+        double step=Math.pow(num,3)*2;
+        System.out.print("Result: " + step);
+    }
+    else {
+        System.out.print("No result: ");
+    }
+    in.close();
+    }
+}
